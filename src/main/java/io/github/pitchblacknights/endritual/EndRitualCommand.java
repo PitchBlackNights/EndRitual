@@ -22,7 +22,6 @@ public class EndRitualCommand implements CommandExecutor {
     private Boolean run = true;
 
     private static void particleCircleEnd(final Entity particleCircle, final Entity flyingDisc, final World world) {
-        //TODO: Fix the particle spread
         new ParticleBuilder(Particle.CLOUD).location(particleCircle.getLocation().add(0, 2.3, 0)).offset(1.0, 1.0, 1.0).count(1000).spawn();
         world.playSound(particleCircle.getLocation(), Sound.ENTITY_GENERIC_EXPLODE, SoundCategory.AMBIENT, 100, 1);
 
