@@ -1,0 +1,20 @@
+name: End_Ritual
+version: '${version}'
+main: io.github.pitchblacknights.endritual.EndRitual
+api-version: '1.20'
+prefix: EndRitual
+load: STARTUP
+authors: [PitchBlackNights]
+
+permissions:
+  op.node:
+    description: "Default OP Permission"
+    default: op
+  noop.node:
+    description: "Default No OP Permission"
+    default: not op
+
+commands:
+  endritual:
+    description: "Command to start the End Ritual"
+    aliases: [er, ritual]
